@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="form">
+    <input type="text" placeholder="Name" id="Name">
+    <input type="text" placeholder="Age" id="Age">
+    <input type="text" placeholder="Email" id="Email">
+    <input type="text" placeholder="Mobile" id="Mobile">
+   
+    <input type="submit">
+   </form> 
+</body>
+</html>
+<script>
+
+    document.querySelector("#form").addEventListener("submit",myfun)
+    
+    let arr=[];
+    function myfun(event)
+    {
+        event.preventDefault()
+        // console.log("hello")
+        let n=document.querySelector("#Name").value;
+        // console.log(n)
+        let A=document.querySelector("#Age").value;
+        let E=document.querySelector("#Email").value;
+        let M=document.querySelector("#Mobile").value;
+        
+        // console.log(n,A,E,M)
+  
+        let obj={
+            name:n,
+            age:A,
+            email:E,
+            mobile:M
+        }
+
+        arr.push(obj);
+    }   
+    console.log(arr)
+</script>

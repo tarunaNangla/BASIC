@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3_5_multiples_sum.html</title>
+</head>
+<body>
+    <input id="input" value=""/>
+    <button>Submit</button>
+    <p></p>
+</body>
+</html>
+<script >
+
+// console.log("hello")
+ document.querySelector("button").addEventListener("click",showfun)
+ function showfun()
+ {
+    let limit=30;
+    let sum=0
+    for(let i=0;i<=limit;i++)
+    {
+        if(i%3==0 && i%5==0)
+        {
+            sum=sum+(i)
+        }
+    }
+    console.log(sum)
+    // console.log("hello")
+    let int=document.getElementById("input").value;
+    // console.log(int)
+    document.querySelector("p").innerText=sum 
+ }
+</script>
