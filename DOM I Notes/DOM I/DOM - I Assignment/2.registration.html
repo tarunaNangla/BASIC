@@ -27,26 +27,61 @@
     <script type="text/javascript">
       function showName() {
         // Show filled name inside h1
-      }
+        let name=document.getElementById("name").value;
+        let dname=document.getElementById("dName");
+        dname.textContent=name
+        }
 
       function showGender() {
         // Show the selected gender inside h2
+        let gender=document.getElementById("gender").value;
+        let dGender=document.getElementById("dGender");
+        dGender.textContent=gender
       }
 
       function showEmail() {
         // Show the filled email inside h3
+        let email=document.getElementById("email").value;
+        let dEmail=document.getElementById("dEmail");
+        dEmail.textContent=email
       }
 
       function showMobile() {
         // Show the filled mobile inside h4
+        let mobile=document.getElementById("mobile").value;
+        let dMobile=document.getElementById("dMobile");
+        dMobile.textContent=mobile
       }
 
       function resetForm() {
         // Reset all the form elements to default values (blank "")
+        let dMobile=document.getElementById("dMobile").innerText="MOBILE";
+        
+        let dEmail=document.getElementById("dEmail").innerText="EMAIL";
+        let dGender=document.getElementById("dGender").innerText="GENDER";
+        let dname=document.getElementById("dName").innerText="NAME";
+       
+        
       }
 
       function resetDisplay() {
         // Reset all the headings (h1, h2, h3, h4) to blank values
+        let name=document.getElementById("name").value;
+        let dname=document.getElementById("dName");
+        dname.textContent=name
+
+        let gender=document.getElementById("gender").value;
+        let dGender=document.getElementById("dGender");
+        dGender.textContent=gender
+
+
+        let email=document.getElementById("email").value;
+        let dEmail=document.getElementById("dEmail");
+        dEmail.textContent=email
+
+        let mobile=document.getElementById("mobile").value;
+        let dMobile=document.getElementById("dMobile");
+        dMobile.textContent=mobile
       }
     </script>
   </body>
