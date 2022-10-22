@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+      <button>Primary</button>
+      <button>Secondary</button>
+      <button>Success</button>
+      <button>Danger</button>
+      <button>Warning</button>
+      <button>Info</button>
+      <button>Light</button>
+      <button>Dark</button>
+      <button>Link</button>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    let but=document.querySelectorAll("button")
+    // console.log(but[0].innerText)
+    for(let i=0;i<but.length;i++)
+    {
+        (but[i].style.color="pink")
+    }
+</script>
